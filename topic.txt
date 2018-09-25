@@ -1,0 +1,5 @@
+The topic that we plan to learn about is the language Python, with emphasis
+on web application development. We will look into using libraries such as 
+Flask and Sanic to create an API, and possibly integrate a database into 
+our web application as well. If we have addidional time we may look into 
+using other open source APIs in our web application.
