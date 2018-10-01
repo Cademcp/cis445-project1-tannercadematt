@@ -82,5 +82,7 @@ modules.xml
 .idea/misc.xml
 *.ipr
 
+# ignore venv
+/venv
 
 # End of https://www.gitignore.io/api/pycharm+all
