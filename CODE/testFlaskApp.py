@@ -8,7 +8,7 @@ def index():
     return "This is the homepage"
 
 
-if __name__ == "__testFlaskApp__":
+if __name__ == "__main__":
     app.run(debug=True)
 
 
