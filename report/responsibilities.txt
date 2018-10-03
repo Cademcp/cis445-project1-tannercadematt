@@ -1,0 +1,9 @@
+Cade:
+HTML frontend
+
+Tanner:
+Flask route implementation
+
+Matt:
+Database configuration with MongoDB
+
