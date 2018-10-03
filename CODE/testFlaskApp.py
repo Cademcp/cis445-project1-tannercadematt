@@ -3,12 +3,14 @@ from flask import Flask, render_template
 testDB = {
     "Player": {
         "Name": "Carlos Gonzalez",
-        "Number": "22",
+        "Number": "5",
         "Position": "OF",
-        "Age": "27",
+        "Age": "32",
         "Hits": "L",
         "Throws": "L",
-        "Image": "Ap_Creative_Stock_Header.jpg"
+        "Image": "Ap_Creative_Stock_Header.jpg",
+        "Height": "6' 1\"",
+        "Weight": "220lbs"
     }
 
 
@@ -26,8 +28,13 @@ def index():
     hits = testDB['Player']['Hits']
     throws = testDB['Player']['Throws']
     image = testDB['Player']['Image']
-    return render_template(index.html, playerName=name, playerNumber=number, playerPosition=position, playerAge=age,
-                           playerHits=hits, playerThrows=throws, playerImage=image)
+    height = testDB['Player']['Height']
+    weight = testDB['Player']['Weight']
+    return render_template('index.html', playerName=name,
+                           playerNumber=number, playerPosition=position, playerAge=age,
+                           playerHits=hits, playerThrows=throws,
+                           playerImage=image, playerHeight=height,
+                           playerWeight=weight)
 
 
 if __name__ == "__main__":

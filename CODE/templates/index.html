@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIS 445 Project 1</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+	  <h1>Sports Teams Info</h1>
+	<div>
+	<table class="table table-bordered">
+		<thead>
+		  <tr>
+			<th>Player Name</th>
+			<th>Age</th>
+			<th>Position</th>
+			<th>Height</th>
+			<th>Weight</th>
+			<th>Jersey Number</th>
+			<th>Bat</th>
+			<th>Throw</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td><a href="#" data-toggle="popover" title="Popover Header"
+				   data-content="">{{ playerName }}</a></td>
+			<td>{{ playerAge }}</td>
+			<td>{{ playerPosition }}</td>
+			<td>{{ playerHeight }}</td>
+			  <td>{{ playerWeight }}</td>
+			  <td>{{ playerNumber }}</td>
+			  <td>{{ playerHits }}</td>
+			  <td>{{ playerThrows }}</td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+		  </tr>
+		</tbody>
+  </table>
+	</div>
+</div>
+	
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+		html: true,
+		trigger: 'hover',
+//		content: <img src="Ap_Creative_Stock_Header.jpg" width="834" height="390" alt=""/>
+		content: '<div class="media"><a href="#" class="pull-left"><img src="Ap_Creative_Stock_Header.jpg" width="200px" height="100px" class="media-object" alt="Sample Image"></a><div class="media-body"><h4 class="media-heading">John Carter</h4><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
+	});   
+});
+</script>
+	
+</body>
+</html>
