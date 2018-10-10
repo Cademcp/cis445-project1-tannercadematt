@@ -10,6 +10,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     team = query_database({"Team": "Rockies"})
+    return render_template('home.html', team_name=team)
+
+@app.route('/Rockies')
+def displayRockies():
+    team = query_database({"Team": "Rockies"})
     return render_template('index.html', team_name=team)
 
 

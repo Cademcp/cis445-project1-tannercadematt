@@ -10,6 +10,20 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Choose Team</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="http://localhost:5000">Home</a></li>
+          <li><a href="http://localhost:5000/Rockies">Rockies</a></li>
+          <li><a href="http://localhost:5000/Braves">Braves</a></li>
+          <li><a href="http://localhost:5000/Brewers">Brewers</a></li>
+            <li><a href="http://localhost:5000/Dodgers">Dodgers</a></li>
+        </ul>
+      </div>
+    </nav>
 	<div class="container">
 	  <h1>{{ team_name[0]['Team'] }}</h1>
 	<div>
@@ -29,8 +43,9 @@
 		<tbody>
 		{% for player in team_name %}
 		  <tr>
-			<td><a href="#" data-toggle="popover" title="Popover Header"
-				   data-content="">{{player['Player Name']}}</a></td>
+			<td><a href="#" data-toggle="popover" data-trigger="hover" title="{{player['Player Name']}}"
+				   data-html="true"
+                   data-content="<img src={{ player.Photo }} width='200px' height='200px' class='media-object'></a>">{{player['Player Name']}}</a></td>
 			<td>{{ player['Age'] }}</td>
 			<td>{{ player['Position'] }}</td>
 			<td>{{ player['Height'] }}</td>
@@ -44,17 +59,12 @@
   </table>
 	</div>
 </div>
-	
+
 <script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-		html: true,
-		trigger: 'hover',
-//		content: <img src="Ap_Creative_Stock_Header.jpg" width="834" height="390" alt=""/>
-		content: '<div class="media"><a href="#" class="pull-left"><img src="Ap_Creative_Stock_Header.jpg" width="200px" height="100px" class="media-object" alt="Sample Image"></a><div class="media-body"><h4 class="media-heading">John Carter</h4><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
-	});   
+    $('[data-toggle="popover"]').popover();
 });
 </script>
-	
+
 </body>
 </html>
