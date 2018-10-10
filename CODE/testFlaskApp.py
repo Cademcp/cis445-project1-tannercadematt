@@ -2,8 +2,6 @@ from flask import Flask, render_template
 import pymongo
 
 
-
-
 app = Flask(__name__)
 
 
@@ -12,9 +10,28 @@ def index():
     team = query_database({"Team": "Rockies"})
     return render_template('home.html', team_name=team)
 
+
 @app.route('/Rockies')
 def displayRockies():
     team = query_database({"Team": "Rockies"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/Braves')
+def displayBraves():
+    team = query_database({"Team": "Braves"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/Brewers')
+def displayBrewers():
+    team = query_database({"Team": "Brewers"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/Dodgers')
+def displayDodgers():
+    team = query_database({"Team": "Dodgers"})
     return render_template('index.html', team_name=team)
 
 
