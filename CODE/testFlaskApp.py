@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    team = query_database({"Player Name": "Carlos Gonzalez"})
-    return render_template('index.html', team_name = team)
+    team = query_database({"Team": "Rockies"})
+    return render_template('index.html', team_name=team)
 
 
 def query_database(query):

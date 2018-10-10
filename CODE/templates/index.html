@@ -11,7 +11,7 @@
 
 <body>
 	<div class="container">
-	  <h1>Sports Teams Info</h1>
+	  <h1>{{ team_name[0]['Team'] }}</h1>
 	<div>
 	<table class="table table-bordered">
 		<thead>
@@ -27,37 +27,19 @@
 		  </tr>
 		</thead>
 		<tbody>
+		{% for player in team_name %}
 		  <tr>
 			<td><a href="#" data-toggle="popover" title="Popover Header"
-				   data-content="">{{ playerName }}</a></td>
-			<td>{{ playerAge }}</td>
-			<td>{{ playerPosition }}</td>
-			<td>{{ playerHeight }}</td>
-			  <td>{{ playerWeight }}</td>
-			  <td>{{ playerNumber }}</td>
-			  <td>{{ playerHits }}</td>
-			  <td>{{ playerThrows }}</td>
+				   data-content="">{{player['Player Name']}}</a></td>
+			<td>{{ player['Age'] }}</td>
+			<td>{{ player['Position'] }}</td>
+			<td>{{ player['Height'] }}</td>
+			  <td>{{ player['Weight'] }}</td>
+			  <td>{{ player['Jersey Number'] }}</td>
+			  <td>{{ player['Bat'] }}</td>
+			  <td>{{ player['Throw'] }}</td>
 		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-		  </tr>
-		  <tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-			  <td></td>
-		  </tr>
+        {% endfor %}
 		</tbody>
   </table>
 	</div>
