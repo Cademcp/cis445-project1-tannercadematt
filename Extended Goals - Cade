@@ -1,3 +1,12 @@
 Week 1 - Create personalized pages for each MLB team (i.e. team images, etc)
+    Issue 1 - Research dynamic background changing
+    Issue 2 - Research different ways to layout UI
+    Issue 3 - Implement new design choices
 Week 2 - Add an about section for each team
+    Issue 1 - Find information about each team
+    Issue 2 - Research ways to show information to user effectively
+    Issue 3 - Implement changes to add about section for each team
 Week 3 - Make table Paginated
+    Issue 1 - Research table pagination 
+    Issue 2 - Find best practices when displaying paginated tables
+    Issue 3 - Implement new paginated table in UI
