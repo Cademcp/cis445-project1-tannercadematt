@@ -1,0 +1,12 @@
+Week 1 - Add two more teams to database
+	Issue 1 - Create Flask routes for two additional teams
+	Issue 2 - Query database to extract team data
+	Issue 3 - Pass team data to html files
+Week 2 - Add career stats for each player in database
+	Issue 1 - Find career stats
+	Issue 2 - Add career stats to database
+	Issue 3 - Make player career stats viewable on website
+Week 3 - Incorporate team picture for each team
+	Issue 1 - Research most effective way to store and display
+	Issue 2 - Store team pictures in database
+	Issue 3 - Make team picture viewable on website
