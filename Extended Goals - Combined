@@ -1,0 +1,41 @@
+Week 1 - Create personalized pages for each MLB team (i.e. team images, etc)
+    * Cade
+        Issue 1 - Research dynamic background changing
+        Issue 2 - Research different ways to layout UI
+        Issue 3 - Implement new design choices
+    * Tanner
+	    Issue 1 - Create Flask routes for two additional teams
+	    Issue 2 - Query database to extract team data
+	    Issue 3 - Pass team data to html files
+    * Matt
+        Issue 1 - Add in the Astros
+        Issue 2 - Add in the Indians
+        Issue 3 - Add in the Red Sox
+        Issue 4 - Add in the Yankees
+Week 2 - Add an about section for each team
+    * Cade
+        Issue 1 - Find information about each team
+        Issue 2 - Research ways to show information to user effectively
+        Issue 3 - Implement changes to add about section for each team
+    * Tanner
+    	Issue 1 - Find career stats
+	    Issue 2 - Add career stats to database
+	    Issue 3 - Make player career stats viewable on website
+    * Matt
+        Issue 1 - Add in the standings for all games that have taken place in the post season so far
+        Issue 2 - Add in placeholders for the games that will take place
+Week 3 - Make table Paginated
+    * Cade
+        Issue 1 - Research table pagination 
+        Issue 2 - Find best practices when displaying paginated tables
+        Issue 3 - Implement new paginated table in UI
+    * Tanner
+        Issue 1 - Research most effective way to store and display
+	    Issue 2 - Store team pictures in database
+	    Issue 3 - Make team picture viewable on website
+    * Matt
+        Issue 1 - Create a second collection for teams
+        Issue 2 - Add in a bio and stats for the Astros
+        Issue 3 - Add in a bio and stats for the Indians
+        Issue 4 - Add in a bio and stats for the Red Sox
+        Issue 5 - Add in a bio and stats for the Yankees
