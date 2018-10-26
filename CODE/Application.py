@@ -35,9 +35,34 @@ def displayDodgers():
     return render_template('index.html', team_name=team)
 
 
+@app.route('/Astros')
+def displayAstros():
+    team = query_database({"Team": "Astros"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/Yankees')
+def displayYankees():
+    team = query_database({"Team": "Yankees"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/Indians')
+def displayIndians():
+    team = query_database({"Team": "Indians"})
+    return render_template('index.html', team_name=team)
+
+
+@app.route('/RedSox')
+def displayRedSox():
+    team = query_database({"Team": "Red Sox"})
+    return render_template('index.html', team_name=team)
+
+
 def query_database(query):
     client = pymongo.MongoClient(
-        'mongodb+srv://mattgates:passwordmdb@tannercadematt-kkd3l.mongodb.net/test?retryWrites=true')
+        'mongodb+srv://mattgates:passwordmdb@tannercadematt-'
+        'kkd3l.mongodb.net/test?retryWrites=true')
 
     db = client.Project1
 
