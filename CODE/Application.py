@@ -59,6 +59,36 @@ def displayRedSox():
     return render_template('index.html', team_name=team)
 
 
+@app.route('/NLDS')
+def displayNLDS():
+    series = query_database_games({"Series": "NLDS"})
+    return render_template('index.html', playoff_rounds=series)
+
+
+@app.route('/ALDS')
+def displayALDS():
+    series = query_database_games({"Series": "ALDS"})
+    return render_template('index.html', playoff_rounds=series)
+
+
+@app.route('/NLCS')
+def displayNLCS():
+    series = query_database_games({"Series": "NLCS"})
+    return render_template('index.html', playoff_rounds=series)
+
+
+@app.route('/ALCS')
+def displayALCS():
+    series = query_database_games({"Series": "ALCS"})
+    return render_template('index.html', playoff_rounds=series)
+
+
+@app.route('/WorldSeries')
+def displayWorldSeries():
+    series = query_database_games({"Series": "World Series"})
+    return render_template('index.html', playoff_rounds=series)
+
+
 def query_database(query):
     client = pymongo.MongoClient(
         'mongodb+srv://mattgates:passwordmdb@tannercadematt-'
@@ -76,6 +106,25 @@ def query_database(query):
     client.close()
 
     return team_name
+
+
+def query_database_games(query):
+    client = pymongo.MongoClient(
+        'mongodb+srv://mattgates:passwordmdb@tannercadematt-'
+        'kkd3l.mongodb.net/test?retryWrites=true')
+
+    db = client.Project1
+
+    collection = db.Games
+
+    playoff_rounds = []
+
+    for x in collection.find(query):
+        playoff_rounds.append(x)
+
+    client.close()
+
+    return playoff_rounds
 
 
 if __name__ == "__main__":
