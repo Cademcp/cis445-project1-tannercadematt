@@ -14,79 +14,79 @@ def index():
 @app.route('/Rockies')
 def displayRockies():
     team = query_database({"Team": "Rockies"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Braves')
 def displayBraves():
     team = query_database({"Team": "Braves"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Brewers')
 def displayBrewers():
     team = query_database({"Team": "Brewers"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Dodgers')
 def displayDodgers():
     team = query_database({"Team": "Dodgers"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Astros')
 def displayAstros():
     team = query_database({"Team": "Astros"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Yankees')
 def displayYankees():
     team = query_database({"Team": "Yankees"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/Indians')
 def displayIndians():
     team = query_database({"Team": "Indians"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/RedSox')
 def displayRedSox():
     team = query_database({"Team": "Red Sox"})
-    return render_template('index.html', team_name=team)
+    return render_template('team_info.html', team_name=team)
 
 
 @app.route('/NLDS')
 def displayNLDS():
     series = query_database_games({"Series": "NLDS"})
-    return render_template('index.html', playoff_rounds=series)
+    return render_template('series_info.html', playoff_rounds=series)
 
 
 @app.route('/ALDS')
 def displayALDS():
     series = query_database_games({"Series": "ALDS"})
-    return render_template('index.html', playoff_rounds=series)
+    return render_template('series_info.html', playoff_rounds=series)
 
 
 @app.route('/NLCS')
 def displayNLCS():
     series = query_database_games({"Series": "NLCS"})
-    return render_template('index.html', playoff_rounds=series)
+    return render_template('series_info.html', playoff_rounds=series)
 
 
 @app.route('/ALCS')
 def displayALCS():
     series = query_database_games({"Series": "ALCS"})
-    return render_template('index.html', playoff_rounds=series)
+    return render_template('series_info.html', playoff_rounds=series)
 
 
 @app.route('/WorldSeries')
 def displayWorldSeries():
     series = query_database_games({"Series": "World Series"})
-    return render_template('index.html', playoff_rounds=series)
+    return render_template('series_info.html', playoff_rounds=series)
 
 
 def query_database(query):
