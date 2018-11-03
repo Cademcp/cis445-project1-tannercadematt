@@ -1,0 +1,31 @@
+{"_id":{"$oid":"5bda790f5c5bf10868954202"},"Series":"NLDS1","Game":"1","Home":"Brewers","Away":"Rockies","HRuns":"3","HHits":"7","HErr":"1","ARuns":"2","AHits":"4","Aerr":"0","HHR":"1","AHR":"0"}
+{"_id":{"$oid":"5bda79de6da839086897eb2e"},"Series":"NLDS1","Game":"2","Home":"Brewers","Away":"Rockies","HRuns":"4","HHits":"9","HErr":"1","ARuns":"0","AHits":"6","Aerr":"0","HHR":"0","AHR":"0"}
+{"_id":{"$oid":"5bda79e16da839086897eb2f"},"Series":"NLDS1","Game":"3","Home":"Rockies","Away":"Brewers","HRuns":"0","HHits":"4","HErr":"0","ARuns":"6","AHits":"12","Aerr":"0","HHR":"0","AHR":"3"}
+{"_id":{"$oid":"5bdcff666da839086897eb30"},"Series":"NLDS2","Game":"1","Home":"Dodgers","Away":"Braves","HRuns":"6","HHits":"5","HErr":"1","ARuns":"0","AHits":"6","Aerr":"1","HHR":"3","AHR":"0"}
+{"_id":{"$oid":"5bdcffb76da839086897eb31"},"Series":"NLDS2","Game":"2","Home":"Dodgers","Away":"Braves","HRuns":"3","HHits":"5","HErr":"0","ARuns":"0","AHits":"3","Aerr":"0","HHR":"2","AHR":"0"}
+{"_id":{"$oid":"5bdcfff16da839086897eb32"},"Series":"NLDS2","Game":"3","Home":"Braves","Away":"Dodgers","HRuns":"6","HHits":"4","HErr":"1","ARuns":"5","AHits":"7","Aerr":"1","HHR":"2","AHR":"2"}
+{"_id":{"$oid":"5bdd001c6da839086897eb33"},"Series":"NLDS2","Game":"4","Home":"Braves","Away":"Dodgers","HRuns":"2","HHits":"6","HErr":"0","ARuns":"6","AHits":"8","Aerr":"1","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd00676da839086897eb34"},"Series":"ALDS1","Game":"1","Home":"Astros","Away":"Indians","HRuns":"7","HHits":"12","HErr":"0","ARuns":"2","AHits":"3","Aerr":"0","HHR":"4","AHR":"0"}
+{"_id":{"$oid":"5bdd008c6da839086897eb35"},"Series":"ALDS1","Game":"2","Home":"Astros","Away":"Indians","HRuns":"3","HHits":"9","HErr":"0","ARuns":"1","AHits":"3","Aerr":"0","HHR":"1","AHR":"1"}
+{"_id":{"$oid":"5bdd00eb6da839086897eb36"},"Series":"ALDS1","Game":"3","Home":"Indians","Away":"Astros","HRuns":"3","HHits":"7","HErr":"3","ARuns":"11","AHits":"13","Aerr":"0","HHR":"1","AHR":"3"}
+{"_id":{"$oid":"5bdd01426da839086897eb37"},"Series":"ALDS2","Game":"1","Home":"Red Sox","Away":"Yankees","HRuns":"5","HHits":"8","HErr":"0","ARuns":"4","AHits":"10","Aerr":"0","HHR":"1","AHR":"1"}
+{"_id":{"$oid":"5bdd017d6da839086897eb38"},"Series":"ALDS2","Game":"2","Home":"Red Sox","Away":"Yankees","HRuns":"2","HHits":"5","HErr":"1","ARuns":"6","AHits":"8","Aerr":"0","HHR":"1","AHR":"3"}
+{"_id":{"$oid":"5bdd01e1ca7dc71a642457e5"},"Series":"ALDS2","Game":"3","Home":"Yankees","Away":"Red Sox","HRuns":"1","HHits":"5","HErr":"0","ARuns":"16","AHits":"18","Aerr":"0","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd027eca7dc71a642457e6"},"Series":"ALDS2","Game":"4","Home":"Yankees","Away":"Red Sox","HRuns":"3","HHits":"5","HErr":"1","ARuns":"4","AHits":"8","Aerr":"0","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd03aaca7dc71a642457e7"},"Series":"NLCS","Game":"1","Home":"Brewers","Away":"Dodgers","HRuns":"6","HHits":"11","HErr":"0","ARuns":"5","AHits":"8","Aerr":"4","HHR":"2","AHR":"1"}
+{"_id":{"$oid":"5bdd040aca7dc71a642457e8"},"Series":"NLCS","Game":"2","Home":"Brewers","Away":"Dodgers","HRuns":"3","HHits":"7","HErr":"0","ARuns":"4","AHits":"9","Aerr":"0","HHR":"2","AHR":"1"}
+{"_id":{"$oid":"5bdd0435ca7dc71a642457e9"},"Series":"NLCS","Game":"3","Home":"Dodgers","Away":"Brewers","HRuns":"0","HHits":"5","HErr":"0","ARuns":"4","AHits":"8","Aerr":"1","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd0459ca7dc71a642457ea"},"Series":"NLCS","Game":"4","Home":"Dodgers","Away":"Brewers","HRuns":"2","HHits":"7","HErr":"0","ARuns":"1","AHits":"8","Aerr":"0","HHR":"0","AHR":"0"}
+{"_id":{"$oid":"5bdd0487ca7dc71a642457eb"},"Series":"NLCS","Game":"5","Home":"Dodgers","Away":"Brewers","HRuns":"5","HHits":"9","HErr":"0","ARuns":"2","AHits":"5","Aerr":"1","HHR":"0","AHR":"0"}
+{"_id":{"$oid":"5bdd04c8ca7dc71a642457ec"},"Series":"NLCS","Game":"6","Home":"Brewers","Away":"Dodgers","HRuns":"7","HHits":"11","HErr":"0","ARuns":"2","AHits":"5","Aerr":"0","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd051aca7dc71a642457ed"},"Series":"NLCS","Game":"7","Home":"Brewers","Away":"Dodgers","HRuns":"1","HHits":"7","HErr":"0","ARuns":"5","AHits":"10","Aerr":"0","HHR":"1","AHR":"2"}
+{"_id":{"$oid":"5bdd056dca7dc71a642457ee"},"Series":"ALCS","Game":"1","Home":"Red Sox","Away":"Astros","HRuns":"2","HHits":"3","HErr":"1","ARuns":"7","AHits":"5","Aerr":"1","HHR":"0","AHR":"2"}
+{"_id":{"$oid":"5bdd058bca7dc71a642457ef"},"Series":"ALCS","Game":"2","Home":"Red Sox","Away":"Astros","HRuns":"7","HHits":"9","HErr":"0","ARuns":"5","AHits":"7","Aerr":"1","HHR":"0","AHR":"1"}
+{"_id":{"$oid":"5bdd05adca7dc71a642457f0"},"Series":"ALCS","Game":"3","Home":"Astros","Away":"Red Sox","HRuns":"2","HHits":"7","HErr":"0","ARuns":"8","AHits":"9","Aerr":"0","HHR":"0","AHR":"2"}
+{"_id":{"$oid":"5bdd05d4ca7dc71a642457f1"},"Series":"ALCS","Game":"4","Home":"Astros","Away":"Red Sox","HRuns":"6","HHits":"13","HErr":"0","ARuns":"8","AHits":"11","Aerr":"1","HHR":"2","AHR":"1"}
+{"_id":{"$oid":"5bdd05fcca7dc71a642457f2"},"Series":"ALCS","Game":"5","Home":"Astros","Away":"Red Sox","HRuns":"1","HHits":"5","HErr":"1","ARuns":"4","AHits":"8","Aerr":"0","HHR":"1","AHR":"2"}
+{"_id":{"$oid":"5bdd0644ca7dc71a642457f3"},"Series":"WS","Game":"1","Home":"Red Sox","Away":"Dodgers","HRuns":"8","HHits":"11","HErr":"0","ARuns":"4","AHits":"8","Aerr":"0","HHR":"1","AHR":"1"}
+{"_id":{"$oid":"5bdd0660ca7dc71a642457f4"},"Series":"WS","Game":"2","Home":"Red Sox","Away":"Dodgers","HRuns":"4","HHits":"8","HErr":"0","ARuns":"2","AHits":"3","Aerr":"0","HHR":"0","AHR":"0"}
+{"_id":{"$oid":"5bdd0692ca7dc71a642457f5"},"Series":"WS","Game":"3","Home":"Dodgers","Away":"Red Sox","HRuns":"3","HHits":"11","HErr":"1","ARuns":"2","AHits":"7","Aerr":"1","HHR":"2","AHR":"1"}
+{"_id":{"$oid":"5bdd06b3ca7dc71a642457f6"},"Series":"WS","Game":"4","Home":"Dodgers","Away":"Red Sox","HRuns":"6","HHits":"9","HErr":"0","ARuns":"9","AHits":"8","Aerr":"1","HHR":"2","AHR":"2"}
+{"_id":{"$oid":"5bdd06ddca7dc71a642457f7"},"Series":"WS","Game":"5","Home":"Dodgers","Away":"Red Sox","HRuns":"1","HHits":"3","HErr":"0","ARuns":"5","AHits":"8","Aerr":"0","HHR":"1","AHR":"4"}
