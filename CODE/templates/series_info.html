@@ -54,8 +54,11 @@
                           {% if game['HRuns'] > game['ARuns'] %}
                               <td style="background-color: chartreuse">{{ game['Home'] }}</td>
                               <td class="awaybool">{{ game['Away'] }}</td>
-                          {% else %}
+                          {% elif game['ARuns'] > game['HRuns']%}
                               <td class="homebool">{{ game['Home'] }}</td>
+                              <td style="background-color: chartreuse">{{ game['Away'] }}</td>
+                          {% else %}
+                              <td style="background-color: chartreuse">{{ game['Home'] }}</td>
                               <td style="background-color: chartreuse">{{ game['Away'] }}</td>
                           {% endif %}
                           <td>{{ game['HRuns'] }}</td>
