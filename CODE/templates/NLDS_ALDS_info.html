@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Series Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Choose Series</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="http://localhost:5000">Home</a></li>
+          <li><a href="http://localhost:5000/NLDS">National League Division Series</a></li>
+            <li><a href="http://localhost:5000/ALDS">American League Division Series</a></li>
+            <li><a href="http://localhost:5000/ALCS">The American League Championship Series</a></li>
+            <li><a href="http://localhost:5000/NLCS">National League Championship Series</a></li>
+            <li><a href="http://localhost:5000/WorldSeries">World Series</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="container">
+             <h1>{{ playoff_rounds1[0]['Series'] }}</h1>
+        </div>
+        <div class="col-sm-12">
+                <table class="table table-bordered">
+                <thead>
+                      <tr>
+                        <th>Game Number</th>
+                        <th>Home Team</th>
+                        <th>Away Team</th>
+                        <th>Home Runs</th>
+                        <th>Home Hits</th>
+                        <th>Home Errors</th>
+                        <th>Away Runs</th>
+                        <th>Away Hits</th>
+                        <th>Away Errors</th>
+                        <th>Home Home Runs</th>
+                        <th>Away Home Runs</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    {% for game in playoff_rounds1 %}
+                      <tr>
+                        <td>{{ game['Game'] }}</td>
+                        <td>{{ game['Home'] }}</td>
+                        <td>{{ game['Away'] }}</td>
+                          <td>{{ game['HRuns'] }}</td>
+                          <td>{{ game['HHits'] }}</td>
+                          <td>{{ game['HErr'] }}</td>
+                          <td>{{ game['ARuns'] }}</td>
+                      <td>{{ game['AHits'] }}</td>
+                      <td>{{ game['Aerr'] }}</td>
+                      <td>{{ game['HHR'] }}</td>
+                      <td>{{ game['AHR'] }}</td>
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="container">
+             <h1>{{ playoff_rounds2[0]['Series'] }}</h1>
+        </div>
+        <div class="col-sm-12">
+                <table class="table table-bordered">
+                <thead>
+                      <tr>
+                        <th>Game Number</th>
+                        <th>Home Team</th>
+                        <th>Away Team</th>
+                        <th>Home Runs</th>
+                        <th>Home Hits</th>
+                        <th>Home Errors</th>
+                        <th>Away Runs</th>
+                        <th>Away Hits</th>
+                        <th>Away Errors</th>
+                        <th>Home Home Runs</th>
+                        <th>Away Home Runs</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    {% for game in playoff_rounds2 %}
+                      <tr>
+                        <td>{{ game['Game'] }}</td>
+                        <td>{{ game['Home'] }}</td>
+                        <td>{{ game['Away'] }}</td>
+                          <td>{{ game['HRuns'] }}</td>
+                          <td>{{ game['HHits'] }}</td>
+                          <td>{{ game['HErr'] }}</td>
+                          <td>{{ game['ARuns'] }}</td>
+                      <td>{{ game['AHits'] }}</td>
+                      <td>{{ game['Aerr'] }}</td>
+                      <td>{{ game['HHR'] }}</td>
+                      <td>{{ game['AHR'] }}</td>
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</body>
+</html>

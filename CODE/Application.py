@@ -63,14 +63,14 @@ def displayRedSox():
 def displayNLDS():
     series1 = query_database_games({"Series": "NLDS1"})
     series2 = query_database_games({"Series": "NLDS2"})
-    return render_template('series_info.html', playoff_rounds1=series1, playoff_rounds2=series2)
+    return render_template('NLDS_ALDS_info.html', playoff_rounds1=series1, playoff_rounds2=series2)
 
 
 @app.route('/ALDS')
 def displayALDS():
     series1 = query_database_games({"Series": "ALDS1"})
     series2 = query_database_games({"Series": "ALDS2"})
-    return render_template('series_info.html', playoff_rounds1=series1, playoff_rounds2=series2)
+    return render_template('NLDS_ALDS_info.html', playoff_rounds1=series1, playoff_rounds2=series2)
 
 
 @app.route('/NLCS')
