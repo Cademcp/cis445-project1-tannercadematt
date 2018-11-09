@@ -51,8 +51,13 @@
                     {% for game in playoff_rounds %}
                       <tr>
                         <td>{{ game['Game'] }}</td>
-                        <td>{{ game['Home'] }}</td>
-                        <td>{{ game['Away'] }}</td>
+                          {% if game['HRuns'] > game['ARuns'] %}
+                              <td style="background-color: chartreuse">{{ game['Home'] }}</td>
+                              <td class="awaybool">{{ game['Away'] }}</td>
+                          {% else %}
+                              <td class="homebool">{{ game['Home'] }}</td>
+                              <td style="background-color: chartreuse">{{ game['Away'] }}</td>
+                          {% endif %}
                           <td>{{ game['HRuns'] }}</td>
                           <td>{{ game['HHits'] }}</td>
                           <td>{{ game['HErr'] }}</td>

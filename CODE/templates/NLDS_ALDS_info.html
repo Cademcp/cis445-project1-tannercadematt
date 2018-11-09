@@ -31,7 +31,7 @@
              <h1>{{ playoff_rounds1[0]['Series'] }}</h1>
         </div>
         <div class="col-sm-12">
-                <table class="table table-bordered">
+                <table class="table table-bordered" id="table1">
                 <thead>
                       <tr>
                         <th>Game Number</th>
@@ -51,12 +51,17 @@
                     {% for game in playoff_rounds1 %}
                       <tr>
                         <td>{{ game['Game'] }}</td>
-                        <td>{{ game['Home'] }}</td>
-                        <td>{{ game['Away'] }}</td>
-                          <td>{{ game['HRuns'] }}</td>
+                          {% if game['HRuns'] > game['ARuns'] %}
+                              <td style="background-color: chartreuse">{{ game['Home'] }}</td>
+                              <td class="awaybool">{{ game['Away'] }}</td>
+                          {% else %}
+                              <td class="homebool">{{ game['Home'] }}</td>
+                              <td style="background-color: chartreuse">{{ game['Away'] }}</td>
+                          {% endif %}
+                          <td class="bool">{{ game['HRuns'] }}</td>
                           <td>{{ game['HHits'] }}</td>
                           <td>{{ game['HErr'] }}</td>
-                          <td>{{ game['ARuns'] }}</td>
+                          <td class="bool">{{ game['ARuns'] }}</td>
                       <td>{{ game['AHits'] }}</td>
                       <td>{{ game['Aerr'] }}</td>
                       <td>{{ game['HHR'] }}</td>
@@ -72,7 +77,7 @@
              <h1>{{ playoff_rounds2[0]['Series'] }}</h1>
         </div>
         <div class="col-sm-12">
-                <table class="table table-bordered">
+                <table class="table table-bordered" id="table2">
                 <thead>
                       <tr>
                         <th>Game Number</th>
@@ -92,12 +97,17 @@
                     {% for game in playoff_rounds2 %}
                       <tr>
                         <td>{{ game['Game'] }}</td>
-                        <td>{{ game['Home'] }}</td>
-                        <td>{{ game['Away'] }}</td>
-                          <td>{{ game['HRuns'] }}</td>
+                          {% if game['HRuns'] > game['ARuns'] %}
+                              <td style="background-color: chartreuse">{{ game['Home'] }}</td>
+                              <td class="awaybool">{{ game['Away'] }}</td>
+                          {% else %}
+                              <td class="homebool">{{ game['Home'] }}</td>
+                              <td style="background-color: chartreuse">{{ game['Away'] }}</td>
+                          {% endif %}
+                          <td class="bool">{{ game['HRuns'] }}</td>
                           <td>{{ game['HHits'] }}</td>
                           <td>{{ game['HErr'] }}</td>
-                          <td>{{ game['ARuns'] }}</td>
+                          <td class="bool">{{ game['ARuns'] }}</td>
                       <td>{{ game['AHits'] }}</td>
                       <td>{{ game['Aerr'] }}</td>
                       <td>{{ game['HHR'] }}</td>
