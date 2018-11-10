@@ -1,0 +1,7 @@
+We decided that we had enough information in the database for the MLB post-season teams. Rather than adding extra data or functionality that didn’t add much to the overall experience of the webpage I decided that for week 3 I would just do some research on alternative ways to populate a database for a project such as this.
+
+There are a number of websites that offer API’s for MLB data and statistics. That being said, there are a lot that aren’t free to use or don’t provide the same type of data that we’re working with. Some provide exclusively player data, game data, team data, or a more concentrated set such as those.
+
+The best one that I’ve found so far is mysportsfeed.com, but I unfortunately don’t have the time with this project being over to implement any of it for this project. In the future it would obviously be better to use an API to populate a database as opposed to typing/copy and pasting it, but given the initial scope of the project (2-4 teams) I believe it was the right choice to just type it.
+
+Overall we did end up creating a database with two collections to query and pull data from and successfully output the statistics despite how inefficient it was to manually add that data.
